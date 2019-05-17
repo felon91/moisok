@@ -1,0 +1,30 @@
+.footer {
+  background: url("../img/footer-bg.png") left bottom no-repeat;
+}
+
+.footer__wrap {
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+
+.footer__txt {
+  color: $white;
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(34px);
+  letter-spacing: px-to-rem(0.6px);
+  margin: 15px 0;
+  
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  
+}
+
+.footer__copy {
+  color: #707070;
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(34px);
+  letter-spacing: px-to-rem(0.6px);
+  margin: 15px 0;
+}

@@ -1,0 +1,86 @@
+.clients {
+  background: url("../img/clients-bg.png") -200px bottom no-repeat $primary;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: $primary;
+    z-index: -2;
+  }
+
+  &::before {
+    opacity: 0.59;
+    -webkit-text-stroke: 1px #707070;
+    font-size: px-to-rem(259px);
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: $primary;
+    content: "Клиенты";
+    position: absolute;
+    top: -160px;
+    right: 80px;
+    z-index: -1;
+  }
+
+}
+
+.clients__title {
+  @include title {
+    text-align: center;
+    display: block;
+    color: $white;
+  };
+}
+
+.clients__wrap {
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+
+.clients__slider {
+  margin: 50px 0 0px;
+}
+
+@media (max-width: 1500px) {
+
+  .clients {
+
+    &::before {
+      font-size: px-to-rem(120px);
+      line-height: px-to-rem(150px);
+      top: -70px;
+      right: 0;
+      left: 20px;
+    }
+
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .clients {
+
+    &::before {
+      font-size: px-to-rem(60px);
+      line-height: px-to-rem(110px);
+      top: -40px;
+      right: 0;
+      left: 20px;
+    }
+
+  }
+
+  .clients__slider {
+    margin-top: 0;
+  }
+
+}

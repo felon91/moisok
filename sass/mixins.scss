@@ -1,0 +1,138 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+@function px-to-rem($size, $basicSize: 16px) {
+  @return $size / $basicSize#{rem};
+}
+
+@mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
+  font-size: calc(#{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth}));
+}
+
+@mixin button() {
+  border-radius: 72px;
+  box-shadow: 3px 6px 12px 0 rgba(232, 77, 90, 0.5);
+  background-color: #ef4140;
+  font-size: px-to-rem(22px);
+  font-weight: 700;
+  line-height: px-to-rem(32px);
+  text-align: center;
+  color: $white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  @content;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(84deg, #f23a4e, #ff825b);
+    border-radius: 72px;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity;
+  }
+
+  &:hover {
+
+    &::after {
+      opacity: 1;
+    }
+
+  }
+
+  @media (max-width: 980px) {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(22px);
+  }
+
+}
+
+@mixin title() {
+  font-size: px-to-rem(48px);
+  line-height: px-to-rem(58px);
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  color: $primary;
+  display: inline-block;
+  margin: 10px 0;
+  @content;
+
+  span {
+    color: $second;
+  }
+
+  &::after {
+    content: "";
+    width: 122px;
+    height: 4px;
+    background-color: $second;
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  @media (max-width: 980px) {
+    font-size: px-to-rem(38px);
+    line-height: px-to-rem(48px);
+  }
+
+  @media (max-width: 480px) {
+    font-size: px-to-rem(30px);
+    line-height: px-to-rem(40px);
+  }
+
+}

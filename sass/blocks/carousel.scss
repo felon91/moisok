@@ -1,0 +1,95 @@
+.carousel {
+  padding: 50px 0 140px;
+
+  .carousel__item {
+
+    .carousel__img {
+      height: 109px;
+      display: flex;
+      margin-bottom: 40px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: auto;
+        align-self: flex-end;
+      }
+
+    }
+
+  }
+
+  .carousel__name {
+    font-size: px-to-rem(28px);
+    line-height: px-to-rem(40px);
+    font-weight: 900;
+    color: $white;
+    margin-bottom: 20px;
+
+    span {
+      color: $second;
+    }
+
+  }
+
+  .carousel__txt {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(30px);
+    color: #707070;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .carousel {
+    padding-bottom: 50px;
+
+    .carousel__name {
+      font-size: px-to-rem(20px);
+      line-height: px-to-rem(26px);
+    }
+
+    .carousel__txt {
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(24px);
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .carousel {
+    padding-top: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+    .carousel {
+
+      .carousel__img {
+
+        img {
+          margin: 0 auto;
+        }
+
+      }
+
+      .carousel__item {
+        text-align: center;
+      }
+
+      .carousel__txt {
+        max-width: 100%;
+      }
+
+    }
+
+}

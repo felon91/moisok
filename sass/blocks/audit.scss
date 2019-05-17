@@ -1,0 +1,114 @@
+.audit {
+  position: relative;
+  z-index: 1;
+  background: url("../img/audit-bg.png") calc(100% + 320px) bottom no-repeat;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: "";
+    background: $white;
+    z-index: -2;
+    width: 100%;
+    height: 10px;
+  }
+
+  &::before {
+    content: "Аудит";
+    opacity: 0.3;
+    -webkit-text-stroke: 1px #707070;
+    font-family: Lato;
+    font-size: px-to-rem(310px);
+    font-weight: 900;
+    line-height: px-to-rem(350px);
+    color: $white;
+    position: absolute;
+    z-index: -1;
+    top: -165px;
+    left: 0;
+  }
+
+}
+
+.audit__wrap {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.audit__title {
+  @include visually-hidden;
+}
+
+.audit__block {
+  display: flex;
+}
+
+.audit__form {
+  flex-basis: 780px;
+  margin-right: 40px;
+}
+
+.audit__contacts {
+  flex-basis: 536px;
+  box-sizing: border-box;
+  padding: 45px 60px;
+  align-self: center;
+}
+
+@media (max-width: 1500px) {
+
+  .audit {
+
+    &::before {
+      font-size: px-to-rem(120px);
+      line-height: px-to-rem(150px);
+      top: -70px;
+      right: 0;
+      left: 20px;
+    }
+
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .audit__contacts {
+    padding: 25px 30px;
+  }
+
+}
+
+
+@media (max-width: 680px) {
+
+  .audit__block {
+    flex-direction: column;
+  }
+
+  .audit__form {
+    flex-basis: auto;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .audit__contacts {
+    flex-basis: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .audit {
+
+    &::before {
+      font-size: px-to-rem(100px);
+      line-height: px-to-rem(120px);
+      top: -40px;
+    }
+
+  }
+
+}

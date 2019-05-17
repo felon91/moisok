@@ -1,0 +1,22 @@
+.hamburger {
+  cursor: pointer;
+  display: none;
+
+  span {
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $primary;
+    display: block;
+    margin-top: 3px;
+  }
+
+}
+
+@media (max-width: 980px) {
+
+  .hamburger {
+    display: block;
+  }
+
+}

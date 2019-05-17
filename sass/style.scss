@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/fixed-menu";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/socials";
+@import "blocks/analytics";
+@import "blocks/hamburger";
+@import "blocks/works";
+@import "blocks/slider";
+@import "blocks/video";
+@import "blocks/company";
+@import "blocks/clients";
+@import "blocks/carousel";
+@import "blocks/audit";
+@import "blocks/form";
+@import "blocks/contacts";
+@import "blocks/footer";
