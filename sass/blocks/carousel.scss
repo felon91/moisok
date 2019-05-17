@@ -9,7 +9,7 @@
       margin-bottom: 40px;
 
       img {
-        max-width: 100%;
+        max-width: 85%;
         height: auto;
         display: block;
         width: auto;
@@ -21,23 +21,25 @@
   }
 
   .carousel__name {
-    font-size: px-to-rem(28px);
-    line-height: px-to-rem(40px);
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(34px);
     font-weight: 900;
     color: $white;
     margin-bottom: 20px;
+    max-width: 300px;
 
     span {
       color: $second;
+      display: block;
     }
 
   }
 
   .carousel__txt {
-    font-size: px-to-rem(22px);
-    line-height: px-to-rem(30px);
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(24px);
     color: #707070;
-    max-width: 300px;
+    max-width: 250px;
     margin: 20px 0;
   }
 

@@ -3,12 +3,51 @@
 <head>
 	<title>Moisok - Рекламное агентство</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
 	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/all.min.css" type="text/css" />
 </head>
 <body>
 <div class="container">
+	<div class="form-modal form-modal--form">
+		<div class="form-modal__center">
+			<div class="form-modal__block">
+			<button class="form-modal__close">
+				<img src="img/close-button.svg" alt="Закрыть">
+			</button>
+			<form>
+			<div class="form-modal__form form">
+				<p class="form__title"><span>Заполните форму,</span> и мы перезвоним Вам!</p>
+				<div class="form__input">
+					<label for="modal-phone">Номер телефона</label>
+					<input id="modal-phone" type="tel" name="phone" placeholder="Номер телефона">
+				</div>
+				<div class="form__input">
+					<label for="modal-usluga">Название услуги</label>
+					<input id="modal-usluga" type="text" name="usluga" placeholder="Название услуги">
+				</div>
+				<div class="form__textarea">
+					<label for="modal-comment">Дополнительный комментарий</label>
+					<textarea id="modal-comment" placeholder="Дополнительный комментарий"></textarea>
+				</div>
+				<div class="form__button">
+					<button>Заказать</button>
+				</div>
+			</div>
+			</form>
+		</div>
+		</div>
+	</div>
+	<div class="form-modal form-modal--video">
+		<div class="form-modal__center">
+			<div class="form-modal__block">
+			<button class="form-modal__close">
+				<img src="img/close-button.svg" alt="Закрыть">
+			</button>
+				<div class="form-modal__video"></div>
+		</div>
+		</div>
+	</div>
 	<div class="fixed-menu">
 		<div class="fixed-menu__wrap wrap">
 			<div class="fixed-menu__left">
@@ -85,11 +124,11 @@
 				</li>
 			</ul>
 		</div>
-		<svg viewBox="0 25 180 28">
+		<svg class="wave" viewBox="0 25 180 28">
 			<defs>
 				<path
 						id="gentle-wave"
-						d="m -150,44.4 c 30,0 58,
+						d="m -210,44.4 c 30,0 58,
                  -18 87.7,-18 30.3,0 58.3,
                  18 87.3,18 30,0 58,-18 88,
                  -18 30,0 58,18 88,18 l 0,
@@ -230,7 +269,7 @@
 		<div class="video__wrap wrap">
 			<h2 class="video__title">Полезная <span>информация</span></h2>
 			<div class="video__block">
-				<div class="video__item">
+				<div class="video__item" data-url='<iframe width="560" height="315" src="https://www.youtube.com/embed/OK8LMc1ltAo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'>
 					<img src="img/video-bg.jpg"
 							 srcset="img/video-bg@2x.jpg 2x,
              img/video-bg@3x.jpg 3x"
@@ -238,14 +277,14 @@
 					>
 				</div>
 				<div class="video__item-two">
-					<div class="video__item">
+					<div class="video__item" data-url='<iframe width="560" height="315" src="https://www.youtube.com/embed/QW8j6xxL-YM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'>
 						<img src="img/video-bg.jpg"
 								 srcset="img/video-bg@2x.jpg 2x,
              img/video-bg@3x.jpg 3x"
 								 class="video__img"
 						>
 					</div>
-					<div class="video__item">
+					<div class="video__item" data-url='<iframe width="560" height="315" src="https://www.youtube.com/embed/k2bfwCVIfWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'>
 						<img src="img/video-bg.jpg"
 								 srcset="img/video-bg@2x.jpg 2x,
              img/video-bg@3x.jpg 3x"
@@ -287,40 +326,28 @@
 			<div class="clients__slider carousel owl-carousel owl-theme">
 				<div class="carousel__item">
 					<div class="carousel__img">
-						<img src="img/client.png"
-								 srcset="img/client@2x.png 2x,
-							 img/client@3x.png 3x"
-						>
+						<img src="img/client.png" alt="">
 					</div>
 					<p class="carousel__name">Компания <span>"Гермес"</span></p>
 					<p class="carousel__txt">Гидроизоляция помещений</p>
 				</div>
 				<div class="carousel__item">
 					<div class="carousel__img">
-						<img src="img/client2.png"
-								 srcset="img/client2@2x.png 2x,
-							 img/client2@3x.png 3x"
-						>
+						<img src="img/client2.png" alt="">
 					</div>
 					<p class="carousel__name">Компания <span>Caleo</span></p>
 					<p class="carousel__txt">Производством и продажа теплых полов</p>
 				</div>
 				<div class="carousel__item">
 					<div class="carousel__img">
-						<img src="img/client3.png"
-								 srcset="img/client3@2x.png 2x,
-             img/client3@3x.png 3x"
-						>
+						<img src="img/client3.png" alt="">
 					</div>
 					<p class="carousel__name">Компания <span>General Smeta</span></p>
 					<p class="carousel__txt">Облачный сервис для сметчиков</p>
 				</div>
 				<div class="carousel__item">
 					<div class="carousel__img">
-						<img src="img/client4.png"
-								 srcset="img/client4@2x.png 2x,
-							 img/client4@3x.png 3x"
-						>
+						<img src="img/client4.png" alt="">
 					</div>
 					<p class="carousel__name">Компания <span>Grandkor</span></p>
 					<p class="carousel__txt">Продажа современных строительных материалов</p>
@@ -338,22 +365,24 @@
 			<h2 class="audit__title">Аудит</h2>
 			<div class="audit__block">
 				<div class="audit__form form">
-					<p class="form__title"><span>Оставьте заявку</span> и получите чек-лист аудита:</p>
-					<div class="form__input">
-						<label for="phone">Номер телефона</label>
-						<input id="phone" type="tel" name="phone" placeholder="Номер телефона">
-					</div>
-					<div class="form__input">
-						<label for="usluga">Название услуги</label>
-						<input id="usluga" type="text" name="usluga" placeholder="Название услуги">
-					</div>
-					<div class="form__textarea">
-						<label for="comment">Дополнительный комментарий</label>
-						<textarea id="comment" placeholder="Дополнительный комментарий"></textarea>
-					</div>
-					<div class="form__button">
-						<button>Заказать</button>
-					</div>
+					<form action="#">
+						<p class="form__title"><span>Оставьте заявку</span> и получите чек-лист аудита:</p>
+						<div class="form__input">
+							<label for="phone">Номер телефона</label>
+							<input id="phone" type="tel" name="phone" placeholder="Номер телефона">
+						</div>
+						<div class="form__input">
+							<label for="usluga">Название услуги</label>
+							<input id="usluga" type="text" name="usluga" placeholder="Название услуги">
+						</div>
+						<div class="form__textarea">
+							<label for="comment">Дополнительный комментарий</label>
+							<textarea id="comment" placeholder="Дополнительный комментарий"></textarea>
+						</div>
+						<div class="form__button">
+							<button>Заказать</button>
+						</div>
+					</form>
 				</div>
 				<div class="audit__contacts contacts">
 					<p class="contacts__title">Контакты</p>

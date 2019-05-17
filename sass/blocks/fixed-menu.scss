@@ -28,7 +28,7 @@
 }
 
 .fixed-menu__logo {
-  flex-basis: 186px;
+  flex-basis: 136px;
   flex-shrink: 0;
   margin-right: 24px;
 }
@@ -40,8 +40,8 @@
 }
 
 .fixed-menu__phone {
-  font-size: px-to-rem(26px);
-  line-height: px-to-rem(36px);
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(30px);
 }
 
 .fixed-menu__phone-link {
@@ -65,15 +65,6 @@
       border-bottom-color: transparent;
     }
 
-  }
-
-}
-
-@media (max-width: 1500px) {
-
-  .fixed-menu__phone {
-    font-size: px-to-rem(20px);
-    line-height: px-to-rem(30px);
   }
 
 }

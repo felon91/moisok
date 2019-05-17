@@ -9,6 +9,28 @@
     background-color: $primary;
     display: block;
     margin-top: 3px;
+    transition-duration: 500ms;
+    transition-property: transform;
+  }
+
+}
+
+.hamburger--active {
+
+  span {
+
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -5px);
+    }
+
   }
 
 }

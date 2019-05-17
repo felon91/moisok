@@ -6,15 +6,14 @@
   &::after {
     opacity: 0.59;
     -webkit-text-stroke: 1px #707070;
-    font-size: px-to-rem(259px);
+    font-size: px-to-rem(159px);
     font-weight: 900;
     line-height: 1.4;
     letter-spacing: normal;
-    text-align: center;
     color: $primary;
     content: "Бизнес";
     position: absolute;
-    top: -170px;
+    top: -120px;
     right: 80px;
     z-index: -1;
   }
@@ -22,23 +21,22 @@
   &::before {
     opacity: 0.59;
     -webkit-text-stroke: 1px #707070;
-    font-size: px-to-rem(259px);
+    font-size: px-to-rem(159px);
     font-weight: 900;
     line-height: 1.4;
     letter-spacing: normal;
-    text-align: center;
     color: $primary;
     content: "Разработка";
     position: absolute;
     bottom: 80px;
-    right: 80px;
+    left: 100px;
     z-index: -1;
   }
 
 }
 
 .works__wrap {
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -54,64 +52,34 @@
   position: relative;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1024px) {
 
   .works {
 
-    &::before {
-      font-size: px-to-rem(150px);
-      line-height: px-to-rem(200px);
-    }
-
-  }
-
-}
-
-@media (max-width: 1500px) {
-
-  .works {
-
-    &::after {
-      font-size: px-to-rem(120px);
-      line-height: px-to-rem(150px);
-      top: -70px;
-    }
-
-  }
-
-  .works__wrap {
-    padding-top: 50px;
-  }
-
-}
-
-@media (max-width: 980px) {
-
-  .works {
-
-    &::before {
-      font-size: px-to-rem(100px);
+    &::before, &::after {
+      font-size: px-to-rem(70px);
       line-height: px-to-rem(120px);
     }
 
+    &::after {
+      top: -50px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
   }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   .works {
 
     &::before {
-      font-size: px-to-rem(60px);
+      font-size: px-to-rem(55px);
       line-height: px-to-rem(90px);
-      right: 20px;
-    }
-
-    &::after {
-      font-size: px-to-rem(70px);
-      line-height: px-to-rem(100px);
-      top: -30px;
     }
 
   }

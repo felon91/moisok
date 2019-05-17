@@ -19,7 +19,7 @@
     opacity: 0.3;
     -webkit-text-stroke: 1px #707070;
     font-family: Lato;
-    font-size: px-to-rem(310px);
+    font-size: px-to-rem(159px);
     font-weight: 900;
     line-height: px-to-rem(350px);
     color: $white;
@@ -56,22 +56,6 @@
   align-self: center;
 }
 
-@media (max-width: 1500px) {
-
-  .audit {
-
-    &::before {
-      font-size: px-to-rem(120px);
-      line-height: px-to-rem(150px);
-      top: -70px;
-      right: 0;
-      left: 20px;
-    }
-
-  }
-
-}
-
 @media (max-width: 880px) {
 
   .audit__contacts {
@@ -82,6 +66,16 @@
 
 
 @media (max-width: 680px) {
+
+  .audit {
+
+    &::before {
+      font-size: px-to-rem(100px);
+      line-height: px-to-rem(120px);
+      top: -40px;
+    }
+
+  }
 
   .audit__block {
     flex-direction: column;
@@ -95,20 +89,6 @@
 
   .audit__contacts {
     flex-basis: auto;
-  }
-
-}
-
-@media (max-width: 480px) {
-
-  .audit {
-
-    &::before {
-      font-size: px-to-rem(100px);
-      line-height: px-to-rem(120px);
-      top: -40px;
-    }
-
   }
 
 }

@@ -3,8 +3,8 @@
 }
 
 .form__title {
-  font-size: px-to-rem(38px);
-  line-height: px-to-rem(50px);
+  font-size: px-to-rem(34px);
+  line-height: px-to-rem(46px);
   font-family: "Montserrat";
   color: $primary;
   margin: 0 0 20px 0;
@@ -51,7 +51,7 @@
   max-width: 536px;
   margin-top: 30px;
 
-  button {
+  button, input[type="submit"] {
     @include button {
       max-width: 276px;
       margin: 0 auto;

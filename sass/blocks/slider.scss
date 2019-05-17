@@ -68,7 +68,7 @@
 }
 
 .slider__title {
-  font-size: px-to-rem(32px);
+  font-size: px-to-rem(24px);
   font-weight: 700;
   line-height: 1.09;
   text-align: left;
@@ -82,11 +82,11 @@
   color: #5e6471;
 
   li {
-    font-size: px-to-rem(18px);
+    font-size: px-to-rem(16px);
     line-height: px-to-rem(20px);
     font-weight: 700;
     padding-left: 32px;
-    margin: 20px 0;
+    margin: 15px 0;
     background: url("../img/check-red.svg") left 3px no-repeat;
     background-size: 17px;
   }
@@ -94,8 +94,8 @@
 }
 
 .slider__company {
-  font-size: px-to-rem(20px);
-  line-height: px-to-rem(25px);
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(23px);
   font-weight: 900;
   color: #5e6471;
   margin: 20px 0 0;

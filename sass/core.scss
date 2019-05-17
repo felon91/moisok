@@ -18,11 +18,11 @@ body {
 }
 
 .container {
-	@include min-max(320px, 100%, 0);
+	@include min-max(320px, 1920px, 0);
 }
 
 .wrap {
-	@include min-max(320px, 1680px, 15px);
+	@include min-max(320px, 1200px, 15px);
 }
 
 .wave {
