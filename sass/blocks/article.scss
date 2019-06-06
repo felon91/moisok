@@ -1,0 +1,153 @@
+.article {
+
+  p {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(22px);
+    color: $primary;
+    margin: 25px 0;
+
+    + h2, + h3, + h4, + h5, + h6 {
+      margin-top: 35px;
+    }
+
+    + ul {
+      margin-top: -25px;
+      margin-bottom: -25px;
+    }
+
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: px-to-rem(20px);
+    line-height: px-to-rem(24px);
+    font-weight: 900;
+    margin: 20px 0;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(22px);
+      position: relative;
+      list-style: none;
+      text-indent: 41px;
+      color: $primary;
+
+      &::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $second;
+        position: absolute;
+        left: 15px;
+        top: 8px;
+      }
+
+    }
+
+    + h2, + h3, + h4, + h5, + h6 {
+      margin-top: 60px;
+    }
+
+  }
+  
+  a {
+    color: $primary;
+    
+    &:hover {
+      text-decoration: none;
+    }
+    
+  }
+
+  ul.article__category {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 25px auto;
+    height: auto;
+  }
+
+}
+
+.article__wrap {
+  margin-top: 110px;
+  max-width: 605px;
+  margin-bottom: 50px;
+}
+
+.article__breadcrumbs {
+  margin: 20px 0;
+}
+
+.article__title {
+  font-size: px-to-rem(28px);
+  line-height: px-to-rem(30px);
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+p.article__info {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(20px);
+  color: $primary;
+  margin: 20px 0 10px;
+}
+
+.article__date {
+  background: url("../img/clock.svg") left center no-repeat;
+  padding-left: 28px;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.article__view {
+  background: url("../img/view.svg") left center no-repeat;
+  padding-left: 28px;
+  display: inline-block;
+}
+
+.article__table-of-contents {
+  margin: 15px 0 20px;
+}
+
+.article__warning {
+  padding-left: 20px;
+  border-left: 3px solid $second;
+  margin: 25px 0;
+
+  p {
+    color: $black;
+    font-weight: 500;
+  }
+
+}
+
+.article__video {
+  @include adaptive-video;
+}
+
+.article__img {
+  max-width: 100%;
+  display: block;
+  margin: 25px auto;
+  height: auto;
+}
+
+p.article__comments {
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(28px);
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}

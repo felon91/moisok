@@ -38,9 +38,9 @@ $(document).ready(function () {
     }
   });
 
-  $('.menu__link').on('click', function (e) {
+  $('.menu__link, .fixed-menu__right--main .menu li:not(.link) a').on('click', function (e) {
     e.preventDefault();
-    let target = $(this).attr('href');
+    let target = $(this).attr('href').slice(1);
     $('html, body').stop().animate({scrollTop: $(target).offset().top}, 1000);
     return false;
   });
